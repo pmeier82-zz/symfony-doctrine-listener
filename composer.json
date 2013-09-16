@@ -21,10 +21,6 @@
         "incenteev/composer-parameter-handler": "~2.0",
 
         "doctrine/doctrine-fixtures-bundle": "dev-master",
-
-        "knplabs/knp-menu"            : "dev-master",
-        "knplabs/knp-menu-bundle"     : "dev-master",
-        "knplabs/knp-paginator-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
