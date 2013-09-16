@@ -48,11 +48,25 @@ A data fixture inserting two `Item`s is available. I use this to check if the sh
 
 STATUS: ok!
 
-### Adding "knplabs/knp-menu-bundle"     : "1.*"
+### Adding `knplabs/knp-menu-bundle`
 
 procedure: adding `"knplabs/knp-menu-bundle"     : "1.*"` to `composer.json`.
 
 A simple menu for navigation is implemented.
+
+STATUS: ok!
+
+### Adding `knplabs/knp-paginator-bundle`
+
+procedure: adding `"knplabs/knp-paginator-bundle": "dev-master"` to `composer.json`.
+
+A simple menu for navigation is implemented.
+
+STATUS: ok!
+
+### Base classes for entities and controllers
+
+procedure: outsource most of the logic in to abc's, where only parameters and handler methods are left to the implementations.
 
 STATUS: ok!
 
