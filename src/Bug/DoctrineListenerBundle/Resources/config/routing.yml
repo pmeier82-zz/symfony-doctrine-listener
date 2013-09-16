@@ -1,0 +1,11 @@
+homepage:
+  pattern:  /
+  defaults: { _controller: DoctrineListenerBundle:Default:index }
+
+DoctrineListenerBundle_item:
+  resource: "@DoctrineListenerBundle/Resources/config/routing/item.yml"
+  prefix:   /item
+
+DoctrineListenerBundle_shelve:
+  resource: "@DoctrineListenerBundle/Resources/config/routing/shelve.yml"
+  prefix:   /shelve

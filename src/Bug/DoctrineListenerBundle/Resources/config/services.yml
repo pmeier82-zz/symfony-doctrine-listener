@@ -1,0 +1,17 @@
+parameters:
+
+  doctrine_listener_bundle.lce_listener.class: Bug\DoctrineListenerBundle\EventListener\LifecycleEventListener
+  doctrine_listener_bundle.other_service.class: Bug\DoctrineListenerBundle\Service\OtherService
+
+services:
+
+  doctrine_listener_bundle.other_service:
+    class: %doctrine_listener_bundle.other_service.class%
+
+  doctrine_listener_bundle.lce_listener:
+    class: %doctrine_listener_bundle.lce_listener.class%
+    arguments:
+      - @doctrine_listener_bundle.other_service
+    tags:
+      - { name: doctrine.event_listener, event: postPersist }
+      - { name: doctrine.event_listener, event: postUpdate }

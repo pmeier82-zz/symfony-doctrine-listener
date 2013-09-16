@@ -1,0 +1,30 @@
+item:
+    pattern:  /
+    defaults: { _controller: "DoctrineListenerBundle:Item:index" }
+
+item_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "DoctrineListenerBundle:Item:show" }
+
+item_new:
+    pattern:  /new
+    defaults: { _controller: "DoctrineListenerBundle:Item:new" }
+
+item_create:
+    pattern:  /create
+    defaults: { _controller: "DoctrineListenerBundle:Item:create" }
+    requirements: { _method: post }
+
+item_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "DoctrineListenerBundle:Item:edit" }
+
+item_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "DoctrineListenerBundle:Item:update" }
+    requirements: { _method: post|put }
+
+item_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "DoctrineListenerBundle:Item:delete" }
+    requirements: { _method: post|delete }

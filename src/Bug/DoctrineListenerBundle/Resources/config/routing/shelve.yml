@@ -1,0 +1,30 @@
+shelve:
+    pattern:  /
+    defaults: { _controller: "DoctrineListenerBundle:Shelve:index" }
+
+shelve_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "DoctrineListenerBundle:Shelve:show" }
+
+shelve_new:
+    pattern:  /new
+    defaults: { _controller: "DoctrineListenerBundle:Shelve:new" }
+
+shelve_create:
+    pattern:  /create
+    defaults: { _controller: "DoctrineListenerBundle:Shelve:create" }
+    requirements: { _method: post }
+
+shelve_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "DoctrineListenerBundle:Shelve:edit" }
+
+shelve_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "DoctrineListenerBundle:Shelve:update" }
+    requirements: { _method: post|put }
+
+shelve_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "DoctrineListenerBundle:Shelve:delete" }
+    requirements: { _method: post|delete }

@@ -1,0 +1,4 @@
+doc_lisn:
+    resource: "@DoctrineListenerBundle/Resources/config/routing.yml"
+    prefix:   /
+
