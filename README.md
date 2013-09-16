@@ -40,7 +40,9 @@ The listener will check if a shelve with `item::shelve_number` exists, and creat
 
 These steps have been taken in order:
 
-### Adding `"doctrine/doctrine-fixtures-bundle": "dev-master"`
+### Adding `doctrine/doctrine-fixtures-bundle`
+
+command: `"doctrine/doctrine-fixtures-bundle": "dev-master"`
 
 A data fixture inserting two `Item`s is available. I use this to check if the shelve is created, indicating the listener is working.
 
