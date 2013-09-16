@@ -1,8 +1,8 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "pmeier82/symfony-doctrine-listener",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "Bug-Hunting boiler plate",
     "autoload": {
         "psr-0": { "": "src/" }
     },
@@ -20,7 +20,9 @@
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
 
-        "doctrine/doctrine-fixtures-bundle": "dev-master"
+        "doctrine/doctrine-fixtures-bundle": "dev-master",
+
+        "knplabs/knp-menu-bundle"     : "1.*"
     },
     "scripts": {
         "post-install-cmd": [

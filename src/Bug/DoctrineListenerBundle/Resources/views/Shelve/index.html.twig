@@ -1,15 +1,15 @@
-{% extends '::base.html.twig' %}
+{% extends 'DoctrineListenerBundle::layout.html.twig' %}
 
-{% block body -%}
+{% block content -%}
     <h1>Shelve list</h1>
 
     <table class="records_list">
         <thead>
-            <tr>
-                <th>Id</th>
-                <th>Number</th>
-                <th>Actions</th>
-            </tr>
+        <tr>
+            <th>Id</th>
+            <th>Number</th>
+            <th>Actions</th>
+        </tr>
         </thead>
         <tbody>
         {% for entity in entities %}
@@ -17,25 +17,25 @@
                 <td><a href="{{ path('shelve_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
                 <td>{{ entity.number }}</td>
                 <td>
-                <ul>
-                    <li>
-                        <a href="{{ path('shelve_show', { 'id': entity.id }) }}">show</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('shelve_edit', { 'id': entity.id }) }}">edit</a>
-                    </li>
-                </ul>
+                    <ul>
+                        <li>
+                            <a href="{{ path('shelve_show', { 'id': entity.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('shelve_edit', { 'id': entity.id }) }}">edit</a>
+                        </li>
+                    </ul>
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-        <ul>
+    <ul>
         <li>
             <a href="{{ path('shelve_new') }}">
                 Create a new entry
             </a>
         </li>
     </ul>
-    {% endblock %}
+{% endblock %}

@@ -1,16 +1,16 @@
-{% extends '::base.html.twig' %}
+{% extends 'DoctrineListenerBundle::layout.html.twig' %}
 
-{% block body -%}
+{% block content -%}
     <h1>Shelve edit</h1>
 
     {{ form(edit_form) }}
 
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('shelve') }}">
-            Back to the list
-        </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+    <ul class="record_actions">
+        <li>
+            <a href="{{ path('shelve') }}">
+                Back to the list
+            </a>
+        </li>
+        <li>{{ form(delete_form) }}</li>
+    </ul>
 {% endblock %}

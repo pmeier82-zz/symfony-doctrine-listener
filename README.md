@@ -42,9 +42,17 @@ These steps have been taken in order:
 
 ### Adding `doctrine/doctrine-fixtures-bundle`
 
-procedure: adding `"doctrine/doctrine-fixtures-bundle": "dev-master"` to composer.json
+procedure: adding `"doctrine/doctrine-fixtures-bundle": "dev-master"` to `composer.json`.
 
 A data fixture inserting two `Item`s is available. I use this to check if the shelve is created, indicating the listener is working.
+
+STATUS: ok!
+
+### Adding "knplabs/knp-menu-bundle"     : "1.*"
+
+procedure: adding `"knplabs/knp-menu-bundle"     : "1.*"` to `composer.json`.
+
+A simple menu for navigation is implemented.
 
 STATUS: ok!
 
