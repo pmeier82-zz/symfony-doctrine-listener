@@ -58,7 +58,7 @@ STATUS: ok!
 
 ### Adding `knplabs/knp-paginator-bundle`
 
-procedure: adding `"knplabs/knp-paginator-bundle": "dev-master"` to `composer.json`.
+procedure: adding `"knplabs/knp-paginator-bundle": "2.3.*"` to `composer.json`.
 
 A simple pagination for index crud page is implemented.
 
@@ -69,6 +69,14 @@ STATUS: ok!
 procedure: outsource most of the logic in to abc's, where only parameters and handler methods are left to the implementations.
 
 STATUS: ok!
+
+### Adding `egeloen/google-map-bundle`
+
+procedure: adding `"egeloen/google-map-bundle": "2.*"` to `composer.json`
+
+A dummy gmap with a marker and rect is added to the hompage.
+
+Status: ok!
 
 ***
 

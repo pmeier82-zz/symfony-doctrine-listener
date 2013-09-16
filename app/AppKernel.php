@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new Ivory\GoogleMapBundle\IvoryGoogleMapBundle(),
             // test bundle
             new Bug\DoctrineListenerBundle\DoctrineListenerBundle(),
         );

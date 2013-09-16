@@ -25,7 +25,9 @@
         "doctrine/doctrine-fixtures-bundle": "dev-master",
 
         "knplabs/knp-menu-bundle": "1.*",
-        "knplabs/knp-paginator-bundle": "dev-master"
+        "knplabs/knp-paginator-bundle": "2.3.*",
+
+        "egeloen/google-map-bundle": "2.*"
     },
     "scripts": {
         "post-install-cmd": [
