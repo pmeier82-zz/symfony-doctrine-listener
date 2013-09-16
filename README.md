@@ -1,16 +1,13 @@
 
-Doctrine LifecycleEvent Listener Boilerplate for debugging
-==========================================================
+# Doctrine LifecycleEvent Listener Boilerplate for debugging
 
 This is a complete boiler plate to test doctrine lifecycle event listeners. I use it to have a buttom up approach to find some configuration issues with my current project.
 
-1) The problem
---------------
+## 1) Problem Definition
 
 More or less over night my doctrine lifecycle event listeners ceased to work. They are not called at all. After some x-debugging I am reasonable sure there is a reasonable attempt to register them. So it seems my doctrine configs faulty or some other bundle highjacks the default connection event manager.
 
-2) The setup
-------------
+## 2) The setup
 
 A simple symfony 2standard edition setup with these steps:
 
@@ -34,23 +31,22 @@ A simple symfony 2standard edition setup with these steps:
 
 There are two trivial entities with no associations. As easy as can be.
 
-  ITEM(id:int, name:str, shelve_number:int)
-  SHELVE(id:int, number:int)
+    ITEM(id:int, name:str, shelve_number:int)
+    SHELVE(id:int, number:int)
 
 The listener will check if a shelve with `item::shelve_number` exists, and create one if not.
 
-3) Incremental steps to reproduce the error
--------------------------------------------
+## 3) Incremental steps to reproduce the error
 
 These steps have been taken in order:
 
-Adding `"doctrine/doctrine-fixtures-bundle": "dev-master"`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+### Adding `"doctrine/doctrine-fixtures-bundle": "dev-master"`
 
 A data fixture inserting two `Item`s is available. I use this to check if the shelve is created, indicating the listener is working.
 
 STATUS: ok!
 
+***
 
 Symfony Standard Edition
 ========================
