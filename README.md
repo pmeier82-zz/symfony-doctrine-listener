@@ -42,7 +42,7 @@ These steps have been taken in order:
 
 ### Adding `doctrine/doctrine-fixtures-bundle`
 
-command: `"doctrine/doctrine-fixtures-bundle": "dev-master"`
+procedure: adding `"doctrine/doctrine-fixtures-bundle": "dev-master"` to composer.json
 
 A data fixture inserting two `Item`s is available. I use this to check if the shelve is created, indicating the listener is working.
 
