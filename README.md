@@ -64,12 +64,6 @@ A simple pagination for index crud page is implemented.
 
 STATUS: ok!
 
-### Base classes for entities and controllers
-
-procedure: outsource most of the logic in to abc's, where only parameters and handler methods are left to the implementations.
-
-STATUS: ok!
-
 ***
 
 Symfony Standard Edition
