@@ -4,7 +4,9 @@
     "type": "project",
     "description": "Bug-Hunting boiler plate",
     "autoload": {
-        "psr-0": { "": "src/" }
+        "psr-0": {
+            "": "src/"
+        }
     },
     "require": {
         "php": ">=5.3.3",
@@ -22,7 +24,8 @@
 
         "doctrine/doctrine-fixtures-bundle": "dev-master",
 
-        "knplabs/knp-menu-bundle"     : "1.*"
+        "knplabs/knp-menu-bundle": "1.*",
+        "knplabs/knp-paginator-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [

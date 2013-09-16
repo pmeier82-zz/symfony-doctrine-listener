@@ -9,16 +9,9 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="item")
  */
 class Item
+    extends Base
 {
     // MEMBERS
-
-    /**
-     * @var integer
-     * @ORM\Id
-     * @ORM\Column(name="id", type="smallint", nullable=false)
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     */
-    protected $id;
 
     /**
      * @var string
@@ -43,14 +36,6 @@ class Item
     }
 
     // GET/SET
-
-    /**
-     * @return integer
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
 
     /**
      * @return string
