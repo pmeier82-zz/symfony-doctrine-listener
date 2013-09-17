@@ -27,7 +27,8 @@
         "knplabs/knp-menu-bundle": "1.*",
         "knplabs/knp-paginator-bundle": "2.3.*",
 
-        "egeloen/google-map-bundle": "2.*"
+        "egeloen/google-map-bundle": "2.*",
+        "willdurand/geocoder": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [

@@ -1,0 +1,33 @@
+{% extends 'DoctrineListenerBundle::layout.html.twig' %}
+
+{% block content -%}
+    <section>
+        <h3>Google Map Widget</h3>
+        {% if map is not empty %}
+            <form>
+                <input id="marker-lat" type="number" name="distance" value="0.0" disabled="disabled"\>
+                <input id="marker-lng" type="number" name="distance" value="0.0" disabled="disabled"\>
+                <input id="marker-radius" type="number" name="distance" value="50" on \>
+                <button type="submit">submit</button>
+                <button type="reset">reset</button>
+                (<span id="marker-status">Stationary..</span>)
+            </form>
+            <div>
+                <div style="float: left;">
+                    <script type="text/javascript"
+                            src="{{ asset('bundles/doctrinelistener/js/jquery-1.7.2.min.js') }}"></script>
+                    <script type="text/javascript"
+                            src="{{ asset('bundles/doctrinelistener/js/map_handler.js') }}"></script>
+                    {{ google_map_css(map) }}
+                    {{ google_map_container(map) }}
+                    {{ google_map_js(map) }}
+                </div>
+                <div style="float: left;">
+                    <span id="addr"></span>
+                </div>
+            </div>
+        {% else %}
+            <p>No map present!</p>
+        {% endif %}
+    </section>
+{% endblock %}

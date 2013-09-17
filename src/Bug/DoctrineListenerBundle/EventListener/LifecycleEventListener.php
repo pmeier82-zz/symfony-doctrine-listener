@@ -4,6 +4,7 @@ namespace Bug\DoctrineListenerBundle\EventListener;
 
 use Bug\DoctrineListenerBundle\Entity\Item;
 use Bug\DoctrineListenerBundle\Entity\Shelve;
+use Bug\DoctrineListenerBundle\Service\MapService;
 use Bug\DoctrineListenerBundle\Service\OtherService;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 
@@ -12,11 +13,11 @@ class LifecycleEventListener
     /**
      * @var \Bug\DoctrineListenerBundle\Service\OtherService
      */
-    protected $os;
+    protected $ms;
 
-    public function __construct(OtherService $os)
+    public function __construct(MapService $ms)
     {
-        $this->os = $os;
+        $this->ms = $ms;
     }
 
     public function postPersist(LifecycleEventArgs $args)

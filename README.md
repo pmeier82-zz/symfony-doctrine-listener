@@ -78,6 +78,14 @@ A dummy gmap with a marker and rect is added to the hompage.
 
 Status: ok!
 
+### Adding `willdurand/geocoder`
+
+procedure: adding `"willdurand/geocoder": "dev-master"` to `composer.json`
+
+A dummy gmap with a marker and rect is added to the hompage.
+
+Status: ok!
+
 ***
 
 Symfony Standard Edition

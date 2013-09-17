@@ -14,6 +14,7 @@ class MainMenu extends ContainerAware
         $menu->addChild('HOME', array('route' => 'homepage'));
         $menu->addChild('ITEM', array('route' => 'item'));
         $menu->addChild('SHELVE', array('route' => 'shelve'));
+        $menu->addChild('MAP', array('route' => 'map'));
 
         return $menu;
     }
