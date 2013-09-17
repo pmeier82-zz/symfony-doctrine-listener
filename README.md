@@ -86,6 +86,14 @@ A dummy gmap with a marker and rect is added to the hompage.
 
 Status: ok!
 
+### Adding `egeloen/ckeditor-bundle`
+
+procedure: adding `"egeloen/ckeditor-bundle": "dev-master",` to `composer.json`
+
+A editor widget on the homepage.
+
+Status: ok!
+
 ***
 
 Symfony Standard Edition

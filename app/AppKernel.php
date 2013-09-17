@@ -22,6 +22,8 @@ class AppKernel extends Kernel
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Ivory\GoogleMapBundle\IvoryGoogleMapBundle(),
+            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
+//            new JMS\SerializerBundle\JMSSerializerBundle(),
             // test bundle
             new Bug\DoctrineListenerBundle\DoctrineListenerBundle(),
         );

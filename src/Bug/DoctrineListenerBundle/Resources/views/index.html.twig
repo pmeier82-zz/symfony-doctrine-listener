@@ -5,5 +5,7 @@
         <h3>Hello Section</h3>
 
         <p>Hello {{ name|default('visitor') }}!</p>
+
+        {% if form is not empty -%}{{ form(form) }}{% endif %}
     </section>
 {% endblock %}

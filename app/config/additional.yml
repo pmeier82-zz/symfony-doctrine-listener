@@ -1,0 +1,21 @@
+ivory_ck_editor:
+    default_config: main
+    configs:
+        main:
+            uiColor: '#ffffff'
+            toolbar: 'kek'
+            language: 'de'
+    toolbars:
+        configs:
+            kek: [ '@document', '@clipboard', '@editing', '@basicstyles', '@paragraph', '@links', '@insert', '@styles', '@colors', '@tools' ]
+        items:
+            document: [ 'Source','-','DocProps','Preview','Print','-','Templates' ]
+            clipboard: [ 'Cut','Copy','Paste','PasteText','PasteFromWord','-','Undo','Redo' ]
+            editing: [ 'Find','Replace','-','SelectAll','-','SpellChecker', 'Scayt' ]
+            basicstyles: [ 'Bold','Italic','Underline','Strike','Subscript','Superscript','-','RemoveFormat' ]
+            paragraph: [ 'NumberedList','BulletedList','-','Outdent','Indent','-','Blockquote','CreateDiv','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl' ]
+            links: [ 'Link','Unlink','Anchor' ]
+            insert: [ 'Table','HorizontalRule','Smiley','SpecialChar' ]
+            styles: [ 'Styles','Format','Font','FontSize' ]
+            colors: [ 'TextColor','BGColor' ]
+            tools: [ 'Maximize', 'ShowBlocks','-','About' ]
